@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/main.css">
+    <title>Coffee :: Cart Page</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header fixed-top">
+            <div class="container bg-dark" data-bs-theme="dark">
+                <div class="header-top d-flex justify-content-between py-2">
+                    <ul class="languages list-inline m-0">
+                        <li class="list-inline-item"><a href="#">RU</a></li>
+                        <li class="list-inline-item"><a href="#" class="active">EN</a></li>
+                    </ul>
+                    <a href="tel:+371000000" class="header-phone">+371000000</a>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+                <div class="container">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex">
+
+                            <ul class="navbar-nav navbar-links me-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">ABOUT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">MENU</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">RESERVATION</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <img class="brand" src="assets/img/logo.png" alt="...">
+                    <div class="right-icons d-flex">
+                        <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-user-large"></i></a>
+                        <a class="nav-link" href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a class="nav-link" href="#offcanvasCart" data-bs-toggle="offcanvas"><i
+                                class="fa-solid fa-suitcase"></i><span class="task"></span></a>
+                    </div>
+
+                </div>
+
+            </nav>
+
+
+        </header>
+
+        <section class="card-section">
+            <div class="container card-page">
+                <h4>Cart</h4>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="offcanvas-body">
+
+                            <div class="minicart-product-row">
+                                <img src="assets/img/product1 1.png" alt="">
+                                <div class="minicart-product-info">
+                                    <p class="product-name">Lavazza Crema E Gusto</p>
+                                    <p class="product-variation">XL</p>
+                                    <p class="product-qty">
+                                        <input type="number" value="2" min="1"> &times; $19.99
+                                    </p>
+                                </div>
+
+                                <a href="#" class="minicart-delete-product"><i class="fa-solid fa-trash-can"></i></a>
+                                <a href="#" class="minicart-update-product"><i
+                                        class="fa-solid fa-arrow-rotate-right"></i></a>
+                            </div>
+                            <div class="minicart-product-row">
+                                <img src="assets/img/product2 1.png" alt="">
+                                <div class="minicart-product-info">
+                                    <p class="product-name">Lavazza Crema E Gusto</p>
+                                    <p class="product-variation">XL</p>
+                                    <p class="product-qty">
+                                        <input type="number" value="2" min="1"> &times; $19.99
+                                    </p>
+                                </div>
+
+                                <a href="#" class="minicart-delete-product"><i class="fa-solid fa-trash-can"></i></a>
+                                <a href="#" class="minicart-update-product"><i
+                                        class="fa-solid fa-arrow-rotate-right"></i></a>
+                            </div>
+                            <div class="minicart-product-row">
+                                <img src="assets/img/product1 1.png" alt="">
+                                <div class="minicart-product-info">
+                                    <p class="product-name">Lavazza Crema E Gusto</p>
+                                    <p class="product-variation">XL</p>
+                                    <p class="product-qty">
+                                        <input type="number" value="2" min="1"> &times; $19.99
+                                    </p>
+                                </div>
+
+                                <a href="#" class="minicart-delete-product"><i class="fa-solid fa-trash-can"></i></a>
+                                <a href="#" class="minicart-update-product"><i
+                                        class="fa-solid fa-arrow-rotate-right"></i></a>
+                            </div>                            
+                          
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="cart-price d-flex justify-content-between price-sumary">
+                            <p>Price:</p>
+                            <p>$19.99</p>
+                        </div>
+                        <div class="cart-delivery d-flex justify-content-between price-sumary">
+                            <p>Delivery:</p>
+                            <p>$3.99</p>
+                        </div>
+                        <div class="cart-total d-flex justify-content-between price-sumary">
+                            <p>Total Price:</p>
+                            <p>$23.98</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <footer class="footer p-5">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 footer-left text-center">
+                        <img src="assets/img/logo.png" alt="">
+                        <h5>CoffeMeet</h5>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 footer-center">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Reservation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 footer-right">
+                        <ul>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+
+    <script src="assets/bootstrap.bundle.min.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+
+</html>
